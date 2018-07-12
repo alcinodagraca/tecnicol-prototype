@@ -1,0 +1,378 @@
+@font-face {
+font-family: 'proxima-regular';
+src: url('../fonts/proxima-regular.otf');
+}
+@font-face {
+font-family: 'proxima-black';
+src: url('../fonts/proxima-black.otf');
+}
+@font-face {
+font-family: 'proxima-thin';
+src: url('../fonts/proxima-thin.otf');
+}
+@font-face {
+font-family: 'proxima-bold';
+src: url('../fonts/proxima-bold.otf');
+}
+@font-face {
+font-family: 'proxima-light';
+src: url('../fonts/proxima-light.otf');
+}
+
+
+/*=======RESET=========*/
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'proxima-light';
+}
+body{
+	width: 100%;
+	overflow-x: hidden;
+}
+h1, h2, h4, h5, h6 {
+	font-family:'proxima-thin';
+	color: #000;
+}
+h3{
+	font-family:'proxima-thin';
+	margin: 50px 0 -10px 0; 
+	font-size: 2em; 
+	font-weight: normal;
+	color: orange;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h4, h5, h6, pre, form, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	direction: ltr;
+}
+p {
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+a {
+	color: #f1f1f1;
+	text-decoration: none;
+	line-height: inherit;
+}
+a:hover{
+	color: #ccc;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #42659A;
+	outline: none;
+}
+img, object, embed {
+	max-width: 100%;
+	height: auto;
+}
+ul{
+	list-style: none;
+}*{
+
+}
+ul{
+	list-style: none;
+}
+.bottom{
+	width: 30px;
+	height: 1px;
+	background-color: #ccc;
+	display: block;
+	margin: 10px 0;
+}
+body{
+	overflow-x: hidden;
+}
+.btn{
+	border: 1px solid orange;
+	background-color: orange;
+	border-radius: 5px;
+	color: #fff;
+	font-size: .9em;
+	padding: 8px 10px; 
+	opacity: .8;
+}
+.btn:hover{
+	box-shadow: 0 0 5px orange;
+}
+.cursos-hide{
+	/*display: none;*/
+}
+/* Header */
+.logo img{
+	width: 270px;
+	line-height: 60px;
+}
+header nav .btn-close,.btn-menu{
+	display: none;
+}
+header{
+	height: 80px;
+	border-bottom: 2px solid orange;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+	background-color: #fff;
+}
+/* header nav */
+nav ul{
+	list-style: none;
+	float: right;
+}
+nav ul li{
+	display: inline;
+}
+/* header nav desktop */
+	header nav li a{
+		color: orange;
+		text-transform: uppercase;
+		font-size: 1em;
+		padding: 20px;
+		line-height: 80px
+	}
+
+/* Main banner */
+.main-banner{
+	margin-top: 60px;
+	background-image: url("../img/capa.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	height: 500px;
+}
+.background{
+	background-color: orange;
+	opacity: .6;
+	height: 500px;
+}
+
+/* Cursos */
+.cursos figure{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+	height: 335px;
+	transition: .5s;
+}
+.cursos figure:hover{
+	border: 1px solid orange;
+	box-shadow: 0 0 5px orange;
+}
+.cursos figure:hover>img{
+	transform: skew(1);
+}
+figure strong{
+	display: block;
+	padding: 10px 0;
+	color: #000;
+}
+figure span{
+	display: block;
+	color: #000;
+}
+figure span.mensalidade{
+	border-top: 1px solid #ccc;
+	margin-top: 5px;
+	padding: 3px 0;
+	color: #000;
+}
+.cursos .curso-textos p{
+	text-align: justify;
+	color: #000;
+}
+
+/* porque-me-inscrever section */
+.porque-me-inscrever p{
+	display: block;
+	color: #111;
+	margin-top: 1.6em;
+}
+.porque-me-inscrever p i.fa{
+	display: block;
+	color: #FFB733;
+}
+
+/*Curos profissionais */
+.cursos-profissionais figure{
+	border-radius: 10px;
+	padding: 5px;
+}
+.cursos-profissionais figure figcaption{
+	background-color: #f1f1f1;
+	padding: 2%;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.cursos-profissionais figure figcaption span.dur{
+	float: right;
+	color: #888;
+	margin-top: 20px;
+	font-size: .9em;
+}
+.cursos-profissionais figure figcaption .btn{
+	margin-top: 10px;
+}
+/* TEstemunhos*/
+.depoimentos{
+	background-color: #f1f1f1;
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+}
+.depoimentos blockquote i.fa{
+	background-color: #ccc;
+	padding: 1.5% 2%;
+	border-radius: 50%;
+	transition: 1s;
+}
+.depoimentos blockquote i.fa:hover{
+	border-radius: 0%;
+}
+/* Certificações*/
+.parceiros h2{
+	text-align: center;
+	font-weight: normal !important;
+}
+
+.parceiros img{
+	filter: grayscale(100%);
+	width: 150px;
+}
+.parceiros img:hover{
+	filter: grayscale(0%);
+}
+/*Footer*/
+
+footer{
+	background-color: #000;
+	padding: 30px 0 0 0;
+}
+footer p{
+	color: #f1f1f1;
+	font-size: .9em;
+	margin: 5px 0;
+	line-height: 1.5em;
+}
+footer .quem-somos p a{
+	font-weight: bold;
+	color: #f1f1f1;
+	line-height: 1.6em;
+}
+footer .quem-somos ul{
+	list-style: none;
+	margin-top: 15px;	
+}
+footer .quem-somos ul li{
+	float: left;
+	margin-right: 1px;
+	padding-bottom: 1.6em;
+}
+footer .quem-somos ul li a i.fa-facebook,ul li a i.fa-twitter,ul li a i.fa-instagram{
+	background-color: #ccc;
+	padding: 15px 15px; 
+	border-radius: 5px;
+}
+footer .quem-somos ul li a i.fa{
+	color: orange;
+}
+footer .quem-somos ul li a i.fa:hover{
+	background-color: #fff;
+}
+
+footer h5{
+	color: #fff;
+	font-size: 1em;
+	line-height: 1.7em;
+}
+footer .copyright{
+	border-top: 1px solid #fff;
+	margin-top: 20px;
+	padding: 5px 0;
+	text-align: center;
+}
+/*footer input*/
+footer input{
+	display: block;
+	margin: 2px auto;
+	width: 70%;
+	background-color: initial;
+	border: 1px solid orange;
+	border-radius: 5px;
+	padding: 5px;
+}
+footer input[type=submit]{
+	background-color: orange;
+	color: #fff;
+	opacity: .7;
+}
+footer input[type=submit]:hover{
+	opacity: 1;
+	box-shadow: 0 0 5px orange;
+}
+footer input[type=text]:focus{
+	box-shadow: 0 0 5px orange;
+}
+
+
+
+
+
+/* -------------------------------------------------- 
+ 	Dispositivos Largos (desktops, 992px and up)
+-----------------------------------------------------*/
+
+@media screen and (min-width: 992px){
+	.porque-me-inscrever{
+		text-align: center;
+	}
+	.depoimentos blockquote{
+		margin-left: 190px;
+		border-left: 3px solid #ccc;
+		padding-left: 20px;
+	}
+	.parceiros ul li{
+		float: left;
+	}	
+}
+
+/* -------------------------------------------------- 
+ 	Single Pages Styles
+-----------------------------------------------------*/
+.title-banner{
+	margin-top: 60px;
+	background-image: url("../img/contacto.jpg");
+	background-size: 500px auto;
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	height: 150px;
+}
+.title-banner .background{
+	background-color: orange;
+	opacity: .6;
+	height: 150px;
+}
+
+.title-banner h1{
+	text-align: center;
+	font-size: 2.9em;
+	padding-top: 20px;
+	color: #000;
+	opacity: 1;
+	text-transform: uppercase;
+}
+.title-banner p{
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: .9em;
+	padding-top: 10px;
+	color: #000;
+	opacity: 1;
+}
